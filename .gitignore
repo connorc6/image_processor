@@ -1,0 +1,12 @@
+# Python
+backend/.venv/
+backend/__pycache__/
+backend/*.pyc
+backend/grocery.db
+
+# Node
+mobile/node_modules/
+mobile/.expo/
+
+# Mac
+.DS_Store

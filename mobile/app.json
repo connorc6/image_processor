@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "GroceryTracker",
+    "slug": "grocery-tracker",
+    "version": "1.0.0",
+    "scheme": "grocerytracker",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#1a7a4a"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.yourname.grocerytracker",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Used to photograph grocery receipts",
+        "NSPhotoLibraryUsageDescription": "Used to select receipt photos from your library"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#1a7a4a"
+      },
+      "package": "com.yourname.grocerytracker",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-camera",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Used to select receipt photos from your library",
+          "cameraPermission": "Used to photograph grocery receipts"
+        }
+      ],
+      "expo-asset"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
